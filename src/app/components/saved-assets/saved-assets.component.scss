@@ -1,0 +1,137 @@
+.saved-assets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 850px;
+    height: 661px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 25px;
+    overflow-y: auto;
+    &-header {
+        display: flex;
+        height: 41px;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+        font: normal normal bold 30px/41px Open Sans;
+        margin-top: 40px;
+        padding-left: 34px;
+
+        .icon {
+            width: 51px;
+            height: 46px;
+        }
+
+        .header-des {
+            font: normal normal bold 30px/41px Open Sans;
+        }
+
+    }
+
+    .asset-list {
+        width: 100%;
+        margin-top: 50px;
+        padding: 0 42px;
+
+        .asset-item {
+            display: grid;
+            grid-template-columns: 1.5fr 0.6fr 70px;
+            align-items: center;
+            height: 84px;
+            border-radius: 8px;
+
+            &:nth-child(even) {
+                background-color: #F0F0F0;
+            }
+
+            &:last-child {}
+
+            .asset-type {
+                font: normal normal 600 30px/41px Open Sans;
+                padding-left: 60px;
+            }
+
+            .asset-val {
+                font: normal normal bold 30px/41px Open Sans;
+
+            }
+        }
+
+        .asset-divider {
+            margin-top: 5px;
+            border: 3px solid #707070;
+        }
+
+        .asset-total {
+            display: grid;
+            grid-template-columns: 1.5fr 0.6fr 70px;
+            height: 100px;
+            align-items: center;
+
+            &-header {
+                font: normal normal 600 30px/41px Open Sans;
+                padding-left: 60px;
+            }
+
+            &-value {
+                font: normal normal bold 30px/41px Open Sans;
+            }
+        }
+    }
+
+    .delete-btn {
+        width: 56px;
+        height: 56px;
+        background-color: #cf4a48;
+        border: 1px solid #cf4a48;
+        border-radius: 60%;
+        transition: background-color 0.3s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #882F2E;
+        }
+
+        .size-6 {
+            width: 25px;
+            height: 25px;
+            fill: white;
+        }
+    }
+
+
+    .add-assets-btn {
+        border: 2px solid #56B059;
+        border-radius: 46px;
+        width: 258px;
+        height: 72px;
+        background-color: #FFFFFF;
+        font: normal normal bold 26px/36px Open Sans;
+        color: #56B059;
+        margin-top: 50px;
+    }
+
+    .button-container {
+        width: 100%;
+        text-align: right;
+
+        .add-assets-btn {
+            margin-right: 43px;
+            margin-bottom: 40px;
+
+            &:hover {
+                background-color: #56B059;
+                color: #ffffff;
+            }
+
+        }
+    }
+}
+
+hr {
+    border-top: 1px solid #cccccc;
+    width: 100%;
+    margin: 0;
+}

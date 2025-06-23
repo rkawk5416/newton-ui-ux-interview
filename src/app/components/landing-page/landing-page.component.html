@@ -1,0 +1,18 @@
+<div class="landing-page-container">
+    <app-empty-asset 
+        *ngIf="assets.length === 0" 
+        (addAsset)="openModal()">
+    </app-empty-asset>
+    <app-saved-assets 
+        *ngIf="assets.length > 0" 
+        [assets]="assets" 
+        (addAsset)="openModal()" 
+        (removeAsset)="removeAsset($event)" 
+        [totalValue]="calculateTotalValue()">
+    </app-saved-assets>
+    <app-asset-modal
+        *ngIf="showModal"
+        (close)="closeModal()"
+        (save)="saveAssets($event)">
+    </app-asset-modal>
+</div>
